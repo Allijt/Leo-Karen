@@ -1,0 +1,233 @@
+:root {
+    --primary-color: #828C6A;
+    --secondary-color: #E69B97;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --white: #FFFFFF;
+    --background: #f9f9f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/Users/allisonjuarez/Desktop/fon2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invitation-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    margin: 20px auto;
+    background-image: url('J&K.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.message-section {
+    background-image: url('J&K-1.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin: 30px 0;
+    padding: 40px;
+    border: 1px solid var(--primary-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.message-overlay {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 25px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+    max-width: 90%;
+}
+
+.invitation-message {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    position: relative;
+    z-index: 3;
+}
+
+.nombres-novios {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    margin: 30px 0;
+    font-weight: 300;
+}
+
+.y-comercial {
+    font-size: 2.5rem;
+    display: block;
+    margin: 10px 0;
+    color: var(--secondary-color);
+}
+
+.date-section {
+    margin: 30px 0;
+    padding: 20px;
+}
+
+.wedding-date {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.wedding-time {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.countdown {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+.details {
+    margin: 20px 0;
+    padding: 15px;
+    text-align: center;
+}
+
+.rings-image {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px;
+    background-image: url('anillos.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ceremony-details {
+    margin-top: 5px;
+}
+
+.details h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.details p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 5px;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+button {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+@media (max-width: 480px) {
+    .invitation-card {
+        padding: 20px;
+    }
+
+    .main-image {
+        height: 300px;
+    }
+
+    .nombres-novios {
+        font-size: 2.8rem;
+    }
+
+    .y-comercial {
+        font-size: 2rem;
+    }
+
+    .message-section {
+        padding: 20px;
+    }
+
+    .message-overlay {
+        padding: 15px;
+    }
+
+    .invitation-message {
+        font-size: 1rem;
+    }
+
+    .wedding-date {
+        font-size: 1.8rem;
+    }
+
+    .rings-image {
+        width: 60px;
+        height: 60px;
+    }
+}

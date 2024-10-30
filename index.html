@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta tags para vista previa en WhatsApp -->
+    <meta property="og:title" content="Leo & Karen - ¡Nos Casamos!" />
+    <meta property="og:description" content="Te invitamos a celebrar nuestra boda - 16 de Febrero 2025" />
+    <meta property="og:image" content="J&K.jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    
+    <title>Leo & Karen - Nuestra Boda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="invitation-card">
+            <div class="main-image"></div>
+
+            <header>
+                <h1 class="nombres-novios">
+                    Leo
+                    <span class="y-comercial">&</span>
+                    Karen
+                </h1>
+            </header>
+
+            <div class="message-section">
+                <div class="message-overlay">
+                    <p class="invitation-message">
+                        Queremos invitarlos a que sean Testigos de nuestra unión como matrimonio y que celebren nuestra felicidad pasandola bien, los esperamos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="date-section">
+                <p class="wedding-date">16 · Febrero · 2025</p>
+                <p class="wedding-time">18:00 hrs</p>
+                <div class="countdown" id="countdown"></div>
+            </div>
+
+            <div class="details">
+                <div class="rings-image"></div>
+                <div class="ceremony-details">
+                    <h2>Ceremonia & Recepción</h2>
+                    <p>Jardín las Orquídeas</p>
+                    <p>6 avenida, Guatemala</p>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button onclick="addToCalendar()">
+                    Agregar al Calendario
+                </button>
+                <button onclick="openMap()">
+                    Ver Ubicación
+                </button>
+                <button onclick="confirmAssistance()">
+                    Confirmar Asistencia
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
