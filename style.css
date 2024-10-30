@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Birds of Paradise';
+    src: url('BirdsofParadise.ttf') format('truetype');
+}
+
 :root {
     --primary-color: #828C6A;
     --secondary-color: #E69B97;
@@ -66,6 +71,23 @@ body {
     border-radius: 8px;
 }
 
+.nombres-novios {
+    font-family: 'Birds of Paradise', cursive;
+    font-size: 4.5rem;
+    color: var(--primary-color);
+    margin: 30px 0;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.y-comercial {
+    font-family: 'Birds of Paradise', cursive;
+    font-size: 3.5rem;
+    display: block;
+    margin: 10px 0;
+    color: var(--secondary-color);
+}
+
 .message-section {
     background-image: url('J&K-1.jpeg');
     background-size: cover;
@@ -98,20 +120,6 @@ body {
     z-index: 3;
 }
 
-.nombres-novios {
-    font-size: 3.5rem;
-    color: var(--primary-color);
-    margin: 30px 0;
-    font-weight: 300;
-}
-
-.y-comercial {
-    font-size: 2.5rem;
-    display: block;
-    margin: 10px 0;
-    color: var(--secondary-color);
-}
-
 .date-section {
     margin: 30px 0;
     padding: 20px;
@@ -131,7 +139,7 @@ body {
 
 .countdown {
     margin: 20px 0;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: var(--text-light);
 }
 
@@ -142,8 +150,8 @@ body {
 }
 
 .rings-image {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height:150px;
     margin: 0 auto 10px;
     background-image: url('anillos.png');
     background-size: contain;
@@ -203,11 +211,11 @@ button:hover {
     }
 
     .nombres-novios {
-        font-size: 2.8rem;
+        font-size: 3.5rem;
     }
 
     .y-comercial {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .message-section {
